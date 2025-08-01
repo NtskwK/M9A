@@ -47,13 +47,31 @@ Check out the [GitHub Pull Request Guide for Beginners](https://maa.plus/docs/zh
 
 6. Local installation
 
-   1. Install python(≥3.10)
+    1. Install python(≥3.10)
 
-   2. Assemble components by running install
+    2. Assemble components by running install
 
-      ```bash
-      python ./tools/install.py
-      ```
+        ```bash
+        python ./tools/install.py
+        ```
+
+    3. Place an embedded Python interpreter in the `install/python` directory (you may need to create this directory manually).
+
+        > It is recommended that you obtain the embedded Python interpreter using one of the following two methods:
+        >
+        > 1. Directly copy the `python` folder included in the release package of M9A.
+        >
+        > 2. Manually download [python - 3.10.11 - embed](https://www.python.org/ftp/python/3.10.11/python-3.10.11-embed-amd64.zip) and extract it to the `install/python/` directory, then **run [get-pip.py](https://bootstrap.pypa.io/pip/get-pip.py) with it**.
+
+        > ⚠
+        >
+        > Problems that may occur during manual configuration:
+        >
+        > ```bash
+        > | ERROR | 没有可用的镜像源，安装依赖失败
+        > ```
+        >
+        > If you encounter this problem, please **use the interpreter in `install/python`** to run [get-pip.py](https://bootstrap.pypa.io/pip/get-pip.py).
 
    Then you can run M9A in the install folder.
 
