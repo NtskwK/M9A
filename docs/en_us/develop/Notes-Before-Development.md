@@ -35,6 +35,7 @@ Check out the [GitHub Pull Request Guide for Beginners](https://maa.plus/docs/zh
 
 5. Set up the development environment:
 
+    - Install python(≥3.11)
     - Download and install VSCode.
     - Optionally install debugging/development tools:
 
@@ -45,41 +46,13 @@ Check out the [GitHub Pull Request Guide for Beginners](https://maa.plus/docs/zh
         | [MFA Tools(Windows Only)](https://github.com/SweetSmellFox/MFATools) | Standalone tool for screenshots, ROI extraction, and color picking |
         | [ImageCropper(Not recommended)](https://github.com/MaaXYZ/MaaFramework/tree/main/tools/ImageCropper) | Standalone tool for screenshots and ROI extraction |
 
-6. Local installation
+6. Start developing:
 
-    1. Install python(≥3.10)
-
-    2. Assemble components by running install
-
-        ```bash
-        python ./tools/install.py
-        ```
-
-    3. Place an embedded Python interpreter in the `install/python` directory (you may need to create this directory manually).
-
-        > It is recommended that you obtain the embedded Python interpreter using one of the following two methods:
-        >
-        > 1. Directly copy the `python` folder included in the release package of M9A.
-        >
-        > 2. Manually download [python - 3.10.11 - embed](https://www.python.org/ftp/python/3.10.11/python-3.10.11-embed-amd64.zip) and extract it to the `install/python/` directory, then **run [get-pip.py](https://bootstrap.pypa.io/pip/get-pip.py) with it**.
-
-        > ⚠
-        >
-        > Problems that may occur during manual configuration:
-        >
-        > ```bash
-        > | ERROR | 没有可用的镜像源，安装依赖失败
-        > ```
-        >
-        > If you encounter this problem, please **use the interpreter in `install/python`** to run [get-pip.py](https://bootstrap.pypa.io/pip/get-pip.py).
-
-   Then you can run M9A in the install folder.
-
-7. Start developing:
+    Launch M9A with the debugging/development tools installed in the previous step.
 
     Enjoy coding! Before starting, check out the [Related Reading](#related-reading).
 
-8. Git operations:
+7. Git operations:
 
     The most commonly used basic commands are:
     - `git add <file>`: Add files to the staging area. Use `*` to represent all files.
@@ -134,7 +107,7 @@ Check out the [GitHub Pull Request Guide for Beginners](https://maa.plus/docs/zh
     - [Git Simplified Guide](https://www.runoob.com/manual/git-guide/)
     - [Git Tutorial | Runoob](https://www.runoob.com/git/git-tutorial.html)
 
-9. Submit a Pull Request:
+8. Submit a Pull Request:
 
     Your modified code has been committed to your repository. Now, you need to submit a Pull Request to the M9A repository and wait for the maintainers to review it.
 
