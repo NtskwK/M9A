@@ -48,7 +48,7 @@ Check out the [GitHub Pull Request Guide for Beginners](https://maa.plus/docs/zh
 
 6. Start developing:
 
-    Launch M9A with the debugging/development tools installed in the previous step.
+    Develop the M9A with the debugging/development tools installed in the previous step. The virtual environment will be automatically created in the `.venv` directory.
 
     Enjoy coding! Before starting, check out the [Related Reading](#related-reading).
 
